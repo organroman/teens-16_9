@@ -1,0 +1,37 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.hero {
+  padding-top: 528px;
+  padding-bottom: 187px;
+  background-image: url("../img/Layer\ 21\ 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.subtitle {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 38px 31px;
+}
