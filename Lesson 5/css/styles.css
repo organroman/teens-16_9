@@ -1,0 +1,87 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.hero {
+  padding-top: 528px;
+  padding-bottom: 187px;
+  background-image: url("../img/Layer\ 21\ 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.subtitle {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.hero-text {
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  margin-bottom: 22px;
+}
+
+.hero-title {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-left: 31px;
+  padding-right: 31px;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 66px;
+  color: #fff;
+  text-transform: uppercase;
+  width: fit-content;
+  border: 1px solid #fff;
+}
+
+.hero-title-color {
+  display: inline-block;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  padding-right: 24px;
+  color: #f48e0b;
+  border-right: 2px solid #f48e0b;
+}
+
+.about-us {
+  padding-top: 93px;
+  text-align: center;
+}
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+}
+.about-us-text {
+  font-size: 17px;
+  line-height: 24px;
+  color: #4d4943;
+  margin-top: 28px;
+}
+.about-us-line {
+  width: 60px;
+  height: 3px;
+  background-color: #f48e0b;
+  border: none;
+  margin-top: 48px;
+  margin-bottom: 57px;
+}
