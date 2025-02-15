@@ -1,0 +1,77 @@
+/* .paragraph::after {
+  content: "Це текст After наш параграф";
+  display: block;
+}
+
+.paragraph::before {
+  content: "Text before paragraph";
+  display: block;
+}
+
+.paragraph::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background-color: aqua;
+} */
+.paragraph::first-letter {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.paragraph::first-line {
+  color: brown;
+}
+
+.link {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 16px;
+  background-color: bisque;
+  color: black;
+  transition: all ease-in-out 0.4s;
+}
+
+.link:hover {
+  background-color: burlywood;
+  color: darkblue;
+  /* transition: all ease-in-out; */
+}
+
+.list-item:first-child {
+  color: blueviolet;
+}
+
+.list-item:last-child {
+  color: darkorange;
+}
+
+.list-item:nth-child(2) {
+  color: red;
+}
+
+.list-item::marker {
+  content: "♥";
+}
+
+.link:visited {
+  color: darkslategrey;
+}
+
+.link:active {
+  background-color: red;
+  color: white;
+}
+
+.input {
+  border: 5px solid green;
+}
+
+.input:focus {
+  border: 5px solid red;
+}
+
+.input::placeholder {
+  color: greenyellow;
+}
