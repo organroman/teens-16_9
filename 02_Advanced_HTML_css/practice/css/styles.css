@@ -151,7 +151,6 @@ h5 {
   margin-bottom: 57px;
 }
 
-
 .menu,
 .menu-item {
   display: inline;
@@ -233,7 +232,6 @@ h5 {
   }
   .about-us-menu-btn {
     display: flex;
-    
   }
   .about-us-menu-btn-img {
     width: 24px;
@@ -311,6 +309,57 @@ h5 {
   margin-top: auto;
 }
 
+@media screen and (max-width: 1199px) {
+  .business-consulting {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .bc-wrapper {
+    margin-top: 80px;
+    flex-direction: column;
+  }
+  .bc-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  .bc-img-item img {
+    width: 100%;
+  }
+  .bc-content {
+    width: 100%;
+  }
+  .bc-content-title {
+    text-align: center;
+  }
+  .bc-content-btn {
+    align-self: center;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .business-consulting {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .bc-wrapper {
+    margin-top: 40px;
+  }
+  .bc-images {
+    gap: 12px;
+  }
+  .bc-img-item-plate {
+    font-size: 12px;
+    width: 102px;
+    height: 38px;
+  }
+  .bc-content-btn {
+    padding: 12px 18px;
+    margin-top: 20px;
+  }
+}
 
 .we-change {
   padding-top: 137px;
