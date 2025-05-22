@@ -30,11 +30,62 @@
 //  Если хотя бы одно из чисел меньше 0,
 //  вывести в модальном окне надпись “А ты хитрец”
 
-let number = Number(prompt("Введіть число"));
-let numberTwo = Number(prompt("Введіть друге число"));
+// let number = Number(prompt("Введіть число"));
+// let numberTwo = Number(prompt("Введіть друге число"));
 
-if (number >= 0 && number <= 20 && numberTwo >= 20 && numberTwo <= 40) {
-  alert("Вы выигрываете автомобиль!");
-} else if (number < 0 || numberTwo < 0) {
-  console.log("А ты хитрец");
+// if (number >= 0 && number <= 20 && numberTwo >= 20 && numberTwo <= 40) {
+//   alert("Вы выигрываете автомобиль!");
+// } else if (number < 0 || numberTwo < 0) {
+//   console.log("А ты хитрец");
+// }
+
+/* Написати програму, яка вітатиме користувача.
+ * Спершу користувач вводить своє ім'я, після чого програма виводить у консоль повідомлення з урахуванням його посади.
+ *
+ * Список посад:
+ * Mike - CEO;
+ * Jane - CTO;
+ * Walter - програміст:
+ * Oliver - менеджер;
+ * John - прибиральник.
+ *
+ * Якщо введено не відоме програмі ім'я — вивести в консоль повідомлення «Користувач не знайдено».
+ *
+ * Виконати завдання у двох варіантах:
+ * - використовуючи конструкцію if/else if/else;
+ * - Використовуючи конструкцію switch.
+ */
+
+let name = prompt("введіть ім'я");
+// if (name === "Mike") {
+//   console.log(`Вітаю, СЕО ${name}`);
+// } else if (name === "Jane") {
+//   console.log(`Вітаю,СТОшник ${name}`);
+// } else if (name === "Oliver") {
+//   console.log(`Вітаю,Менеджер ${name}`);
+// } else if (name === "Walter") {
+//   console.log(`Вітаю,Програміст ${name}`);
+// } else if (name === "John") {
+//   console.log(`Вітаю,Прибиральниця ,дякую вам світла людино ${name}`);
+// } else console.log(`Користувача не знайдено`);
+
+switch (name) {
+  case "Jane":
+    console.log("CTO");
+    break;
+  case "Walter":
+    console.log("Ви програміст");
+    break;
+  case "Mike":
+    console.log("Ви CEO");
+    break;
+  case "Oliver":
+    console.log("Ви менеджер");
+    break;
+  case "John":
+    console.log("Ви прибиральник");
+    break;
+
+  default:
+    console.log("«Користувач не знайдено».");
 }
