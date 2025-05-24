@@ -30,17 +30,17 @@
  * «Вітаємо. Введені вами числа: «ПЕРШЕ_ЧИСЛО» і «ДРУГОЕ_ЧИСЛО».».
  */
 
-// let numberOne = prompt("Введіть перше число");
+let numberOne = prompt("Введіть перше число");
 
-// while (numberOne === null || numberOne === "" || Number.isNaN(+numberOne)) {
-//   numberOne = +prompt("Не вірне число. Введіть коректно перше число");
-// }
+while (numberOne === null || numberOne === "" || Number.isNaN(+numberOne)) {
+  numberOne = +prompt("Не вірне число. Введіть коректно перше число");
+}
 
-// let numberTwo = prompt("Введіть друге число");
-// while (numberTwo === null || numberTwo === "" || Number.isNaN(+numberTwo)) {
-//     numberTwo = +prompt("Не вірне число. Введіть коректно друге число");
-//   }
-// console.log (`Вітаємо. Введені вами числа: ${numberOne} і ${numberTwo} `);
+let numberTwo = prompt("Введіть друге число");
+while (numberTwo === null || numberTwo === "" || Number.isNaN(+numberTwo)) {
+  numberTwo = +prompt("Не вірне число. Введіть коректно друге число");
+}
+console.log(`Вітаємо. Введені вами числа: ${numberOne} і ${numberTwo} `);
 
 // /** За допомогою циклу знайдіть суму чисел від 1 до 100.*/
 let sum = 0;
