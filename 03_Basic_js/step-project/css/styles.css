@@ -1,0 +1,93 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+#our-services {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 400;
+  color: #4e4e4e;
+  text-align: center;
+  position: relative;
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+  width: 79px;
+  height: 1px;
+  background-color: #18cfab;
+  bottom: -24px;
+  left: calc((100% - 79px) / 2);
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 79px;
+  height: 1px;
+  background-color: #18cfab;
+  bottom: -28px;
+  left: calc((100% - 66px) / 2);
+}
+
+.our-services-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 99px;
+}
+
+.our-services-list-item {
+  font-size: 16px;
+  line-height: 39px;
+  color: #717171;
+  background-color: #f8fcfe;
+  padding: 18px 39px;
+  border: 1px solid #edefef;
+  transition: 0.5s;
+  position: relative;
+}
+
+.our-services-list-item.active {
+  background-color: #18cfab;
+  color: #ffffff;
+}
+
+.rectangle::after {
+  content: "";
+  position: absolute;
+  border: 15px solid transparent;
+  border-top: 10px solid #18cfab;
+  bottom: -25px;
+  left: calc((100% - 30px) / 2);
+}
+
+.our-services-list-item:hover {
+  border: 1px solid #18cfab;
+}
+
+.our-services-description-item.hidden {
+  display: none;
+}
+
+.our-services-description-item {
+display: flex;
+gap: 13px;
+margin-top: 27px;
+}
+
+.our-services-description-text {
+font-size: 14px;
+font-weight: 300;
+line-height: 25px;
+color: #777777;
+}
