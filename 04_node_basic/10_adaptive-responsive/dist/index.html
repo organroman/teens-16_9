@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Responsive + Adaptive Demo (Desktop-first)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header__bar">
+      <a class="logo" href="#">DAN.IT</a>
+
+      <nav class="nav">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">Menu</button>
+        <ul id="navMenu" class="nav__list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#cta">Get Started</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 1: HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <h1>Build skills. Level up fast.</h1>
+          <p class="lead">
+            Desktop-first layout that gracefully adapts down. Resize the window to see columns stack, gaps tighten, and type scale.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#cta">Start now</a>
+            <a class="btn btn--ghost" href="#features">Learn more</a>
+          </div>
+        </div>
+        <div class="hero__visual" role="img" aria-label="Abstract dashboard preview">
+          <div class="card card--lg"></div>
+          <div class="card card--sm"></div>
+          <div class="card card--sm"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: FEATURES -->
+    <section id="features" class="features">
+      <div class="container features__grid">
+        <article class="feature">
+          <div class="feature__icon" aria-hidden="true">🚀</div>
+          <h3>Fast track</h3>
+          <p>Desktop grid → tablet wrap → single-column on phones. No drama.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__icon" aria-hidden="true">🧠</div>
+          <h3>Smart content</h3>
+          <p>Type scales down and paddings tighten to keep readability on point.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__icon" aria-hidden="true">🛠️</div>
+          <h3>Gulp-ready</h3>
+          <p>Just compile <code>styles.scss</code> to <code>styles.css</code> in your build.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CTA / ADAPTIVE PANEL -->
+    <section id="cta" class="cta">
+      <div class="container cta__box">
+        <h2>Ready when you are</h2>
+        <p>Buttons grow/shrink, layout flips to vertical under smaller widths.</p>
+        <form class="cta__form" action="#" method="post">
+          <input class="input" type="email" placeholder="Enter your email" aria-label="Email" />
+          <button class="btn btn--primary" type="submit">Join</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">© <span id="year"></span> DAN.IT Education</div>
+      <ul class="footer__links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const btn = document.querySelector('.nav__toggle');
+    const list = document.getElementById('navMenu');
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      list.classList.toggle('nav__list--open');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+@use "./variables" as *;
+
+.site-header {
+    position: sticky;
+    top: 0;
+    backdrop-filter: saturate(180%) blur(8px);
+    background: rgba($bg, 0.7);
+    border-bottom: 1px solid rgba($white, 0.06);
+    z-index: 100;
+}
+
+.header__bar {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.logo {
+    display: inline-block;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: $white;
+    font-size: var(--fs-600);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+
+    &__toggle {
+        display: none;
+        background: $card;
+        border: 1px solid rgba($white, 0.12);
+        padding: 0.6rem 0.9rem;
+        border-radius: 0.5rem;
+        color: $white;
+    }
+
+    &__list {
+        display: flex;
+        gap: 1.2rem;
+
+        a {
+            color: $muted;
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+
+            &:hover {
+                color: $white;
+                background: rgba($white, 0.6);
+            }
+        }
+
+    }
+}

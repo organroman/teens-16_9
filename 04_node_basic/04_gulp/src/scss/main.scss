@@ -1,0 +1,38 @@
+@import './variables';
+@import './header';
+
+body {
+    font-family: $font-stack;
+    color: $text-color;
+    margin: 0;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: #f5f5f5;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+}
+
+.about {
+    padding: 2rem;
+    background: #fff;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+}
+
+.site-footer {
+    background: $primary-color;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}

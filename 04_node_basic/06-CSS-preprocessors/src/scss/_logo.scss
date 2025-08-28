@@ -1,0 +1,13 @@
+@use "./variables" as *;
+
+.logo {
+    margin: 20px 0;
+
+    &__text {
+        font-size: 80px;
+
+        &--blue {
+            color: $text-blue;
+        }
+    }
+}

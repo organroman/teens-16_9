@@ -1,0 +1,57 @@
+@use "./variables" as *;
+
+.nav {
+    margin: 30px 0;
+
+    &__menu {
+        margin: 0 auto;
+        background-color: $background-darker;
+        text-align: center;
+    }
+
+    &__item {
+        display: inline-block;
+        line-height: 69px;
+        border-right: 1px solid transparent;
+        border-left: 1px solid transparent;
+
+        &:hover {
+            background-color: $background-dark;
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+        }
+    }
+
+    &__link {
+        padding: 0 20px;
+        color: #fff;
+        font-size: 24px;
+        text-decoration: none;
+    }
+
+    &--footer {
+        .nav {
+            &__menu {
+                background-color: $background-grey;
+                text-align: left;
+            }
+
+            &__item {
+                border: none;
+
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+
+            &__link {
+                color: $text-grey;
+
+                &:hover {
+                    color: $text-black
+                }
+            }
+        }
+    }
+
+}
