@@ -80,14 +80,244 @@ body {
 }
 
 .our-services-description-item {
-display: flex;
-gap: 13px;
-margin-top: 27px;
+  display: flex;
+  gap: 13px;
+  margin-top: 27px;
 }
 
 .our-services-description-text {
-font-size: 14px;
-font-weight: 300;
-line-height: 25px;
-color: #777777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #777777;
+}
+#our-work {
+  background-color: #e9edef;
+  padding-top: 95px;
+  padding-bottom: 99px;
+}
+.our-work-filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 93px;
+}
+.our-work-filter-item {
+  padding: 15px 30px;
+  border: 1px solid #dadada;
+  font-size: 14px;
+  line-height: 42px;
+  color: #717171;
+}
+.our-work-filter-item.selected {
+  color: #18cfab;
+  border: 2px solid #18cfab;
+}
+#portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 69px;
+}
+.btn-load {
+  background-color: #18cfab;
+  color: #ffffff;
+  border: none;
+  padding: 10px 56px;
+  font-size: 14px;
+  line-height: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 70px;
+}
+.portfolio-item {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-block {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -250px;
+  border-top: 6px solid #18cfab;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9edef;
+  opacity: 0;
+}
+
+.hover-icon-wrapper {
+  margin-bottom: 24px;
+  display: flex;
+  gap: 3px;
+}
+
+.hover-icon-item {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  border: 1px solid #18cfab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-item-square {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #18cfab;
+}
+
+.hover-icon-item:hover {
+  background-color: #18cfab;
+  transition: 0.5s;
+}
+
+.hover-icon-item:hover svg path {
+  fill: #ffffff;
+  transition: 0.5s;
+}
+
+.hover-icon-item:hover .icon-item-square {
+  border: 1px solid #ffffff;
+  transition: 0.5s;
+  background-color: #ffffff;
+}
+
+.text-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hover-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #18cfab;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.hover-subtitle {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #8a8a8a;
+  text-transform: capitalize;
+}
+
+.portfolio-item:hover .hover-block {
+  margin-bottom: 250px;
+  opacity: 1;
+}
+
+.portfolio-item.hidden {
+  display: none;
+}
+
+#feed-back {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/Sections\ background/section-3.jpg"), no-repeat, center,
+    fixed;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-theHam {
+  color: #ffffff;
+  margin-bottom: 100px;
+}
+
+.slides-wrapper {
+  margin-top: 36px;
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+
+.feed-back-slide {
+  text-align: center;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 1s;
+}
+
+.active-slide {
+  opacity: 1;
+}
+
+.feed-back-slide-text {
+  font-weight: 300;
+  line-height: 30px;
+  color: #bbbbbb;
+}
+
+.client-name {
+  font-weight: 700;
+  color: #18cfab;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.client-position {
+  font-weight: 300;
+  line-height: 27px;
+  color: #bbbbbb;
+}
+
+.feed-back-slide-client img {
+  border: 10px solid rgba(24, 207, 160, 0.2);
+  border-radius: 50%;
+  margin-top: 38px;
+}
+
+.feed-back-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+}
+
+.slide-btm {
+  height: 31px;
+  width: 31px;
+  border: 1px solid #bbbbbb;
+}
+
+.feed-back-tab-list {
+  display: flex;
+  transition: 0.5s;
+  gap: 27px;
+}
+
+.client-foto-small {
+  border: 5px solid rgba(24, 207, 160, 0.2);
+  border-radius: 50%;
+}
+
+.active-tab-item {
+  margin-bottom: 10px;
+  transform: scale(1.2);
 }
